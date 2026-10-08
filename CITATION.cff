@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this repository for the code and computed toy example, and IBM Quantum Learning for the teaching source."
+title: "Classical Krylov convergence demonstration"
+type: software
+authors:
+  - family-names: Jain
+    given-names: Sonal
+repository-code: "https://github.com/sonaljainsonaljain/krylov-convergence-demo."
+abstract: "Independent classical Krylov demonstration with an IBM 3x3 validation and a computed 200x200 toy-Hamiltonian convergence example."
+keywords:
+  - Krylov subspace
+  - Rayleigh-Ritz
+  - eigenvalue convergence
