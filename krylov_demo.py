@@ -39,7 +39,7 @@ def main():
     np.testing.assert_allclose(checks, [4., 3., 4.-np.sqrt(2)], atol=1e-12)
     print('IBM 3x3 check:', checks)
     # Own reproducible toy Hamiltonian: isolated lowest eigenvalue and 199 others.
-    # Its entries are dimensionless; this is not a molecular calculation or CK.
+    # Dimensionless test matrix for learning about Krylov convergence.
     n = 200
     H = np.diag(np.r_[0.25, np.linspace(1., 4., n-1)])
     exact = np.linalg.eigvalsh(H)[0]
