@@ -1,6 +1,6 @@
 # Classical Krylov convergence demonstration
 
-A short classical Krylov example prepared for Sonal Jain's OPR.
+A short classical Krylov example prepared.
 
 ![Computed classical Krylov convergence](krylov_convergence.png)
 Inspired by IBM Quantum Learning, **Krylov quantum diagonalization**, Sections 1.1 and 2.1:
