@@ -19,13 +19,13 @@ Only NumPy and Matplotlib are required. No quantum hardware is used.
 
 ## What is computed
 
-The routine builds an orthonormal basis for span{v, Hv, H²v, ...} by applying H and removing projections onto previous vectors twice. At each dimension m it diagonalizes QᵀHQ and computes the absolute difference from the exact lowest eigenvalue. This is an uncompressed, unrestarted classical Krylov demonstration, not a CK or CKCI benchmark.
+The routine builds an orthonormal basis for span{v, Hv, H²v, ...} by applying H and removing projections onto previous vectors twice. At each dimension m it diagonalizes QᵀHQ and computes the absolute difference from the exact lowest eigenvalue. This is a classical Krylov subspace learning example.
 
 Validation first reproduces IBM's worked 3×3 example with diagonal entries 4 and nearest off-diagonal entries -1, starting from (1,0,0). The Ritz estimates are 4, 3, and 4−√2.
 
 The plotted example uses a 200×200 diagonal test matrix: one eigenvalue 0.25 and 199 eigenvalues equally spaced from 1 to 4. The starting vector has equal components, normalized to unit length. This creates a separated lowest eigenvalue and a known nonzero initial overlap; the resulting curve is computed, not prescribed as an exponential. No randomness, compression, molecular Hamiltonian or noise is involved. Energies are dimensionless. Orthogonality, the variational bound and monotonic convergence are checked.
 
-The PNG and PDF show the same 20 computed checkpoints; the CSV supplies exact numeric values. This example illustrates convergence for a chosen gapped spectrum. It is not a proof of universal exponential convergence or of CK performance. The spectrum, gap, starting-state overlap and numerical precision affect convergence.
+The PNG and PDF show the same 20 computed checkpoints; the CSV supplies exact numeric values. This example illustrates convergence for a chosen gapped spectrum. It illustrates this particular example rather than proving universal exponential convergence. The spectrum, gap, starting-state overlap and numerical precision affect convergence.
 
 ## Figure description
 
